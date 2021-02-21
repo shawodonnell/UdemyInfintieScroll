@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFINITE SCROLL</title>
+    <!-- ICON CHANGES THE FAVICON OF THE TAB -->
+    <link rel="icon" type="image/pgn" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
+    <!-- LINK TO CDN CONTENT DELIVERY SYSTEM FOR STYLING -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- title -->
+    <H1>UNSPLASH API - INFINITE SCROLL</H1>
+    <!-- loader HIDDEN AFTER IMAGES LOADED FIRST TIME-->
+    <div class="loaderDIV" id="loaderDIV" >
+        <!-- loading dynamically using javascript -->
+        <img class="loaderIMAGE" src="loader.svg" alt="Loading">
+    </div>
+
+    <!-- IMAGE CONTAINER --> 
+    <div class="image-container" id="image-container">
+
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

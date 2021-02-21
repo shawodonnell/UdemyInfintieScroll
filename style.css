@@ -1,0 +1,76 @@
+/* GOOGLE FONT IMPORT IN CSS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+/*  */
+body{
+    /* GOOGLE FONT BEING INCLUDED IN HTML - SAN SERIF IS BACK UP */
+    font-family: Bebas Neue, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background:darkcyan;
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px; /* moves title down from top of page */
+    margin-bottom: 15px; /* makes sure nothing comes up from below*/
+    letter-spacing: 6px;
+    font-size: 50px;
+}
+
+/* LOADER STYLE */
+.loaderDIV { /* LOADER DIV - creating translucent filter look*/
+    position: fixed; /*doesnt move, even if user scrolls down. */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; /*These 4 extends div across whole page*/
+    background: rgba(255, 255, 255, 0.8); /*Adds a transulcent filter look to the page*/
+}
+/* LOADER IMAGE TAG - moving loader image*/
+.loaderIMAGE{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* this ensures image is in center of div (top & left) but ALSO centre of window page (transform) and never moves!*/
+
+}
+
+/* IMAGE CONTAINER STYLING */
+
+.image-container{
+    margin: 10px 30%; /*TOP&BOTTOM 10PX LEFT & RIGHT 30% EACH.*/
+    /* centers the image inside the image container DIV */
+
+
+}
+
+.image-container img { /*SPECIFIC IMAGE WITHIN CONTAINER DIV*/
+    width: 100%;
+    margin-top: 10px; /* adds margin specific to image only*/
+
+}
+
+
+
+
+
+/* MEDIA QUERY FOR MOBILES */
+@media screen and (max-width: 600px) {
+h1 {
+    letter-spacing: 3px;
+    font-size: 27px;
+}
+
+.image-container {
+    margin: 10px; /*10px all round*/
+}
+.image-container img {
+    margin-top: 0px;
+}
+
+}
